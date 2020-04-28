@@ -71,3 +71,4 @@ jupyter-console==6.1.0
 jupyter-core==4.6.1
 jupyterlab==2.1.1
 jupyterlab-server==1.1.1
+s3contents==0.4.0
