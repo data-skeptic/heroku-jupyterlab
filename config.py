@@ -2,16 +2,9 @@ import os
 
 from s3contents import S3ContentsManager
 
-try:
-    AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
-    AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
-    S3_BUCKET_NAME = os.environ['S3_BUCKET_NAME']
-except (NameError, KeyError):
-    print('Using Bucketeer instead…')
-    # Bucketeer addon.
-    AWS_ACCESS_KEY_ID = os.environ['BUCKETEER_AWS_ACCESS_KEY_ID']
-    AWS_SECRET_ACCESS_KEY = os.environ['BUCKETEER_AWS_SECRET_ACCESS_KEY']
-    S3_BUCKET_NAME = os.environ['BUCKETEER_BUCKET_NAME']
+AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
+AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
+S3_BUCKET_NAME = os.environ['S3_BUCKET_NAME']
 
 PASSWORD = os.environ.get('PASSWORD', '')
 
