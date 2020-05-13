@@ -20,15 +20,9 @@ print('PASSWORD', PASSWORD[0:10])
 
 c.JupyterHub.tornado_settings = {
     'headers': {
-         'Content-Security-Policy': 'frame-ancestors self http://bcd.website.com',
+         'Content-Security-Policy': 'frame-ancestors self http://portal.dataskeptic.com',
     }
 }
-c.Spawner.args = ['--NotebookApp.tornado_settings={
-  'headers':{
-    'Content-Security-Policy': 'frame-ancestors self http://bcd.website.com',
-  }
-}']
-
 
 # Configuration file for jupyterhub.
 
