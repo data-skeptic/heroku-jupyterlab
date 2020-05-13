@@ -16,6 +16,7 @@ c.S3ContentsManager.bucket = S3_BUCKET_NAME
 
 c.NotebookApp.token = ''
 c.NotebookApp.password = PASSWORD
+print('PASSWORD', PASSWORD[0:10])
 
 c.JupyterHub.tornado_settings = {
     'headers': {
