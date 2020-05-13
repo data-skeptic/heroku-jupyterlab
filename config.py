@@ -20,7 +20,7 @@ print('PASSWORD', PASSWORD[0:10])
 
 c.JupyterHub.tornado_settings = {
     'headers': {
-         'Content-Security-Policy': 'frame-ancestors self http://portal.dataskeptic.com',
+         'Content-Security-Policy': 'frame-ancestors self https://portal.dataskeptic.com',
     }
 }
 
