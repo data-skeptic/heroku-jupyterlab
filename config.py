@@ -17,6 +17,17 @@ c.S3ContentsManager.bucket = S3_BUCKET_NAME
 c.NotebookApp.token = ''
 c.NotebookApp.password = PASSWORD
 
+c.JupyterHub.tornado_settings = {
+    'headers': {
+         'Content-Security-Policy': 'frame-ancestors self http://bcd.website.com',
+    }
+}
+c.Spawner.args = ['--NotebookApp.tornado_settings={
+  'headers':{
+    'Content-Security-Policy': 'frame-ancestors self http://bcd.website.com',
+  }
+}']
+
 
 # Configuration file for jupyterhub.
 
